@@ -1,0 +1,190 @@
+[lightness]
+dark = 68
+light = 55
+
+[icon._default]
+color = '#000000'
+name = 'oct-file'
+
+[icon.cache]
+color = '#99b34d'
+extension = ['cache']
+filename = ['cache', 'cachedir.tag']
+name = 'oct-cache'
+
+[icon.changelog]
+color = '#ffc708'
+filename = ['changelog', 'changelog.md', 'changelog.txt', 'history', 'history.md', 'history.txt']
+name = 'oct-history'
+
+[icon.coc]
+color = '#e666b3'
+filename = ['code_of_conduct.md']
+name = 'oct-code_of_conduct'
+
+[icon.config]
+color = '#425d6d'
+extension = ['conf', 'ini', 'yaml', 'yml']
+filename = ['.env', 'config']
+filetype = ['cfg', 'conf', 'yaml']
+name = 'fa-gear'
+
+[icon.css]
+color = '#1b84c1'
+extension = ['css']
+filetype = ['css']
+name = 'oct-hash'
+
+[icon.curl]
+color = '#073551'
+filename = ['.curlrc']
+name = 'md-protocol'
+
+[icon.debug]
+color = '#6680e6'
+extension = ['pdb']
+name = 'oct-codescan'
+
+[icon.dependabot]
+color = '#0366d6'
+filename = ['dependabot.yml']
+name = 'oct-dependabot'
+
+[icon.docker]
+color = '#1d63ed'
+filename = ['.dockerignore', 'dockerfile']
+filetype = ['dockerfile']
+name = 'md-docker'
+
+[icon.editor_config]
+color = '#e0efef'
+filename = ['.editorconfig']
+filetype = ['editorconfig']
+name = 'seti-editorconfig'
+
+[icon.exe]
+color = '#ff6723'
+extension = ['app', 'appimage', 'exe', 'out']
+name = 'oct-file_binary'
+
+[icon.font]
+color = '#1ab399'
+extension = ['eot', 'otf', 'ttf', 'woff', 'woff2']
+name = 'oct-typography'
+
+[icon.git]
+color = '#f34f29'
+filename = [
+  '.git-blame-ignore-revs',
+  '.gitattributes',
+  '.gitconfig',
+  '.gitignore',
+  '.gitkeep',
+  '.gitmessage',
+  '.gitmodules',
+  '.keep',
+  'commit_editmsg',
+]
+filetype = ['gitattributes', 'gitconfig', 'gitcommit', 'gitignore', 'gitrebase']
+name = 'seti-git'
+
+[icon.html]
+color = '#e96227'
+extension = ['htm', 'html']
+filetype = ['html']
+name = 'oct-code'
+
+[icon.hyprland]
+color = '#00aef1'
+filename = ['hyprland.conf']
+name = 'linux-hyprland'
+
+[icon.image]
+color = '#b333cc'
+extension = ['bmp', 'gif', 'icns', 'ico', 'jpeg', 'jpg', 'png', 'webp']
+name = 'oct-image'
+
+[icon.java_script]
+color = '#f1dd35'
+extension = ['js']
+filetype = ['javascript']
+name = 'dev-javascript_badge'
+
+[icon.json]
+color = '#f1dd35'
+extension = ['json', 'json5', 'jsonc']
+filetype = ['json', 'json5', 'jsonc']
+name = 'seti-json'
+
+[icon.license]
+color = '#ffc708'
+filename = ['copying', 'copyright', 'license', 'license.md', 'license.txt']
+name = 'oct-law'
+
+[icon.lock]
+color = '#f88e4a'
+extension = ['lock']
+filename = ['package-lock.json']
+name = 'oct-lock'
+
+[icon.lua]
+color = '#0b22ea'
+extension = ['lua']
+filetype = ['lua']
+name = 'seti-lua'
+
+[icon.markdown]
+color = '#000000'
+extension = ['markdown', 'md']
+filetype = ['markdown']
+name = 'oct-markdown'
+
+[icon.package]
+color = '#ff6723'
+extension = ['appinstaller', 'deb', 'msi', 'pkg.tar.zst', 'rpm']
+name = 'oct-package'
+
+[icon.powershell]
+color = '#0273b7'
+extension = ['ps1', 'psd1', 'psm1']
+filetype = ['ps1']
+name = 'md-powershell'
+
+[icon.readme]
+color = '#006ee1'
+filename = ['readme', 'readme.md', 'readme.txt']
+name = 'oct-info'
+
+[icon.rust]
+color = '#8b3103'
+extension = ['rlib', 'rs']
+filetype = ['rust']
+name = 'seti-rust'
+
+[icon.tmux]
+color = '#14ba19'
+filename = ['.tmux.conf', 'tmux.conf']
+filetype = ['tmux']
+name = 'cod-terminal_tmux'
+
+[icon.toml]
+color = '#974020'
+extension = ['toml']
+filetype = ['toml']
+name = 'custom-toml'
+
+[icon.type_script]
+color = '#3178c6'
+extension = ['ts']
+filetype = ['typescript']
+name = 'seti-tsconfig'
+
+[icon.video]
+color = '#e61a4d'
+extension = ['avi', 'mov', 'mp4']
+name = 'oct-video'
+
+[icon.zip]
+color = '#000000'
+extension = ['gz', 'tar', 'xz', 'zip', 'zst']
+name = 'oct-file_zip'
