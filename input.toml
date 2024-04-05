@@ -6,6 +6,12 @@ light = 55
 color = '#000000'
 name = 'oct-file'
 
+[icon.astro]
+color = '#e13884'
+extension = ['astro']
+filetype = ['astro']
+name = 'custom-astro'
+
 [icon.audio]
 color = '#b333cc'
 extension = ['mp3', 'opus', 'wav']
@@ -299,6 +305,25 @@ color = '#0273b7'
 extension = ['ps1', 'psd1', 'psm1']
 filetype = ['ps1']
 name = 'oct-command_palette'
+
+[icon.prettier]
+color = '#56b3b4'
+filename = [
+  '.prettierignore',
+  '.prettierrc',
+  '.prettierrc.cjs',
+  '.prettierrc.js',
+  '.prettierrc.json',
+  '.prettierrc.json5',
+  '.prettierrc.mjs',
+  '.prettierrc.toml',
+  '.prettierrc.yaml',
+  '.prettierrc.yml',
+  'prettier.config.cjs',
+  'prettier.config.js',
+  'prettier.config.mjs',
+]
+name = 'custom-prettier'
 
 [icon.python]
 color = '#ffd43b'
