@@ -47,9 +47,11 @@ function M.get(opts)
   return { icon = t[1], hl = t[2], default = not idx }
 end
 
-function M.override_nvim_web_devicons()
+function M.nvim_web_devicons()
   local devicon = {}
   ---@diagnostic disable: unused-local
+
+  function devicon.setup() end
 
   function devicon.has_loaded()
     return true
@@ -72,7 +74,7 @@ function M.override_nvim_web_devicons()
   end
 
   ---@diagnostic enable
-  package.loaded['nvim-web-devicons'] = devicon
+  return devicon
 end
 
 return M
