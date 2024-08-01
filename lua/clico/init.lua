@@ -40,9 +40,16 @@ end
 ---@return { icon: string, hl: string, default: boolean }
 function M.get(opts)
   local filename = opts.path and opts.path:lower():match('([^/\\]+)$') or nil
-  local idx = idx_by_filetype(opts.ft)
-    or idx_by_filename(filename)
-    or idx_by_extension(filename)
+  local ft = idx_by_filetype(opts.ft)
+  local fn = idx_by_filename(filename)
+  local ex = idx_by_extension(filename)
+  local idx
+  if (ft and fn and ex) and (ft == ex and ft ~= fn) then
+    -- e.g. dependabot.yml, README.md
+    idx = fn
+  else
+    idx = ft or fn or ex
+  end
   local t = idx and data.icon_highlight_list[idx] or data.icon_highlight_list[1]
   return { icon = t[1], hl = t[2], default = not idx }
 end
