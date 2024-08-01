@@ -7,7 +7,7 @@ fn main() -> anyhow::Result<()> {
     let status = std::process::Command::new("git")
         .args([
             "clone",
-            "--branch=v3.2.0",
+            "--branch=v3.2.1",
             "--filter=blob:none",
             "--depth=1",
             "--sparse",
@@ -15,8 +15,6 @@ fn main() -> anyhow::Result<()> {
         ])
         .arg(clone_dir)
         .status()?;
-    if !status.success() {
-        anyhow::bail!("clone failed");
-    }
+    anyhow::ensure!(status.success(), "clone failed");
     Ok(())
 }
