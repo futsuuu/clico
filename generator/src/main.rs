@@ -12,7 +12,7 @@ fn main() -> Result<()> {
         let mut icons = HashMap::new();
         let map: serde_json::Map<String, serde_json::Value> = serde_json::from_str(json)?;
         for (name, value) in map {
-            if let Some(&serde_json::Value::String(ref icon)) = value.get("char") {
+            if let Some(serde_json::Value::String(ref icon)) = value.get("char") {
                 icons.insert(name, icon.to_string());
             }
         }

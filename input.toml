@@ -10,7 +10,7 @@ name = 'oct-file'
 color = '#e13884'
 extension = ['astro']
 filetype = ['astro']
-name = 'custom-astro'
+name = 'oct-rocket'
 
 [icon.audio]
 color = '#b333cc'
@@ -36,7 +36,20 @@ name = 'oct-cache'
 
 [icon.changelog]
 color = '#ffc708'
-filename = ['changelog', 'changelog.md', 'changelog.txt', 'history', 'history.md', 'history.txt']
+filename = [
+  'changelog',
+  'changelog.md',
+  'changelog.rst',
+  'changelog.txt',
+  'changes',
+  'changes.md',
+  'changes.rst',
+  'changes.txt',
+  'history',
+  'history.md',
+  'history.rst',
+  'history.txt',
+]
 name = 'oct-history'
 
 [icon.coc]
@@ -44,12 +57,23 @@ color = '#e666b3'
 filename = ['code_of_conduct.md']
 name = 'oct-code_of_conduct'
 
+[icon.accounts]
+color = '#f34f29'
+filename = ['.mailmap', 'codeowners']
+name = 'oct-mention'
+
 [icon.config]
 color = '#425d6d'
-extension = ['conf', 'config', 'ini', 'yaml', 'yml']
-filename = ['.env', 'config']
-filetype = ['cfg', 'conf', 'yaml']
-name = 'oct-gear'
+extension = ['cfg', 'cnf', 'conf', 'config', 'ini', 'yaml', 'yml']
+filename = ['.editorconfig', '.env', 'config', 'brewfile']
+filetype = ['cfg', 'conf', 'editorconfig', 'yaml']
+name = 'oct-sliders'
+
+[icon.container]
+color = '#1d63ed'
+filename = ['.dockerignore', 'devcontainer.json', 'dockerfile']
+filetype = ['dockerfile']
+name = 'oct-container'
 
 [icon.cpp]
 color = '#005f9c'
@@ -60,7 +84,7 @@ name = 'seti-cpp'
 color = '#000000'
 extension = ['cr']
 filetype = ['crystal']
-name = 'custom-crystal'
+name = 'oct-ruby'
 
 [icon.css]
 color = '#1b84c1'
@@ -96,28 +120,22 @@ extension = ['desktop']
 filetype = ['desktop']
 name = 'oct-device_desktop'
 
-[icon.docker]
-color = '#1d63ed'
-filename = ['.dockerignore', 'dockerfile']
-filetype = ['dockerfile']
-name = 'md-docker'
+[icon.disk]
+color = '#000000'
+extension = ['dmg', 'img', 'iso']
+name = 'oct-inbox'
 
-[icon.editor_config]
-color = '#e0efef'
-filename = ['.editorconfig']
-filetype = ['editorconfig']
-name = 'seti-editorconfig'
+[icon.document]
+color = '#000000'
+extension = ['markdown', 'md', 'rdoc', 'rst']
+filetype = ['markdown', 'rst']
+name = 'oct-book'
 
 [icon.elixir]
 color = '#6e547b'
-extension = ['ex']
+extension = ['ex', 'exs']
 filetype = ['elixir']
-name = 'seti-elixir'
-
-[icon.elixir_script]
-color = '#6e547b'
-extension = ['exs']
-name = 'seti-elixir_script'
+name = 'fae-drop'
 
 [icon.emacs_lisp]
 color = '#7f5bb6'
@@ -133,6 +151,7 @@ name = 'dev-erlang'
 [icon.eslint]
 color = '#341bab'
 filename = [
+  '.eslintrc',
   '.eslintrc.cjs',
   '.eslintrc.js',
   '.eslintrc.json',
@@ -143,11 +162,6 @@ filename = [
   'eslint.config.mjs',
 ]
 name = 'md-eslint'
-
-[icon.exe]
-color = '#ff6723'
-extension = ['app', 'appimage', 'exe', 'out']
-name = 'oct-file_binary'
 
 [icon.excel]
 color = '#0f733c'
@@ -199,12 +213,6 @@ color = '#80339c'
 extension = ['h++', 'hh', 'hp', 'hpp', 'hxx']
 name = 'seti-cpp'
 
-[icon.html]
-color = '#e96227'
-extension = ['htm', 'html']
-filetype = ['html']
-name = 'oct-code'
-
 [icon.hyprland]
 color = '#00aef1'
 filename = ['hyprland.conf']
@@ -219,7 +227,7 @@ name = 'oct-image'
 color = '#0071bd'
 extension = ['java']
 filetype = ['java']
-name = 'fae-java'
+name = 'cod-coffee'
 
 [icon.java_script]
 color = '#f1dd35'
@@ -239,17 +247,25 @@ extension = ['kt']
 filetype = ['kotlin']
 name = 'seti-kotlin'
 
+[icon.library]
+color = '#3366b3'
+extension = ['dll', 'lib', 'rlib', 'so']
+name = 'oct-package_dependencies'
+
 [icon.license]
 color = '#ffc708'
 extension = ['exception']
 filename = [
   'copying',
   'copyright',
+  'copyright.txt',
   'licence',
   'licence.md',
+  'licence.rst',
   'licence.txt',
   'license',
   'license.md',
+  'license.rst',
   'license.txt',
 ]
 name = 'oct-law'
@@ -270,19 +286,19 @@ name = 'oct-log'
 color = '#0b22ea'
 extension = ['lua']
 filetype = ['lua']
-name = 'seti-lua'
+name = 'oct-moon'
 
-[icon.markdown]
-color = '#000000'
-extension = ['markdown', 'md']
-filetype = ['markdown']
-name = 'oct-markdown'
+[icon.markup]
+color = '#e96227'
+extension = ['erb', 'htm', 'html', 'wxs', 'xml']
+filetype = ['eruby', 'html', 'xml']
+name = 'oct-code'
 
 [icon.nim]
 color = '#ffe220'
 extension = ['nim']
 filetype = ['nim']
-name = 'seti-nim'
+name = 'fa-crown'
 
 [icon.nix]
 color = '#6486bb'
@@ -290,10 +306,16 @@ extension = ['nix']
 filetype = ['nix']
 name = 'linux-nixos'
 
-[icon.package]
+[icon.out]
 color = '#ff6723'
-extension = ['appinstaller', 'deb', 'msi', 'pkg.tar.zst', 'rpm']
+extension = ['app', 'appimage', 'appinstaller', 'deb', 'exe', 'msi', 'out', 'pkg.tar.zst', 'rpm']
 name = 'oct-package'
+
+[icon.package]
+color = '#cc801a'
+extension = ['gemspec']
+filename = ['cargo.toml', 'gemfile', 'package.json', 'pyproject.toml']
+name = 'oct-archive'
 
 [icon.pdf]
 color = '#fb0f01'
@@ -330,49 +352,60 @@ color = '#ffd43b'
 extension = ['py', 'pyc', 'pyi']
 filename = ['py.typed']
 filetype = ['python']
-name = 'fae-python'
+name = 'cod-snake'
 
 [icon.react]
 color = '#00d1f7'
 extension = ['jsx', 'tsx']
 filetype = ['javascriptreact', 'typescriptreact']
-name = 'md-react'
+name = 'md-atom_variant'
 
 [icon.readme]
 color = '#006ee1'
-filename = ['readme', 'readme.md', 'readme.txt']
+filename = [
+  'readme',
+  'readme.md',
+  'readme.rst',
+  'readme.txt',
+]
 name = 'oct-info'
 
 [icon.ruby]
 color = '#ab1105'
 extension = ['rb']
 filetype = ['ruby']
-name = 'md-language_ruby'
+name = 'oct-ruby'
 
 [icon.rust]
 color = '#8b3103'
-extension = ['rlib', 'rs']
+extension = ['rs']
 filetype = ['rust']
-name = 'seti-rust'
+name = 'oct-gear'
 
 [icon.sass]
 color = '#c76494'
 extension = ['sass', 'scss']
 filetype = ['sass', 'scss']
-name = 'seti-sass'
+name = 'oct-hash'
 
 [icon.shell]
 color = '#cc3380'
-extension = ['bash', 'csh', 'fish', 'sh', 'zsh']
-filetype = ['bash', 'csh', 'fish', 'sh', 'zsh']
+extension = ['bash', 'csh', 'elv', 'fish', 'sh', 'zsh']
+filetype = ['bash', 'csh', 'elvish', 'fish', 'sh', 'zsh']
 filename = ['.bash_profile', '.bashrc']
 name = 'oct-terminal'
+
+[icon.svelte]
+color = '#ff3e00'
+extension = ['svelte']
+filetype = ['svelte']
+name = 'seti-svelte'
 
 [icon.svg]
 color = '#f79400'
 extension = ['svg']
 filetype = ['svg']
-name = 'oct-north_star'
+name = 'oct-key_asterisk'
 
 [icon.swift]
 color = '#f15139'
@@ -382,8 +415,17 @@ name = 'seti-swift'
 
 [icon.task]
 color = '#ccb300'
-extension = ['mk']
-filename = ['justfile', 'makefile', 'makefile.toml', 'taskfile.yml']
+extension = ['cmake', 'mak', 'mk', 'rake']
+filename = [
+  'bsdmakefile',
+  'cmakelists.txt',
+  'gnumakefile',
+  'justfile',
+  'makefile',
+  'makefile.toml',
+  'rakefile',
+  'taskfile.yml',
+]
 filetype = ['make']
 name = 'oct-tasklist'
 
@@ -431,12 +473,6 @@ name = 'seti-wasm'
 color = '#144dad'
 extension = ['doc', 'docx']
 name = 'oct-note'
-
-[icon.xml]
-color = '#e37418'
-extension = ['xml']
-filetype = ['xml']
-name = 'oct-rss'
 
 [icon.zig]
 color = '#f7a41d'
